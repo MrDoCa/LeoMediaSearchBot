@@ -5,7 +5,7 @@ from os import environ
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'LeoMediaSearchBot')
+SESSION = environ.get('SESSION', 'InfinityMoviesBot')
 USER_SESSION = environ.get('USER_SESSION', 'User_Bot')
 API_ID = int(environ['API_ID'])
 API_HASH = environ['API_HASH']
@@ -44,22 +44,25 @@ BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1
 
 # Messages
 default_start_massege = """
-**Hi {}👋
-
-I'm Leo Media Search Bot**
-
-You can start searching by the "Search Media 🔎" button below 😊
+**Hi, I'm INFINITY Film Search bot.
+හායි 😌 මම ෆිල්ම් හොයල දෙන බොට් කෙනෙක් ❤️**
+__Here you can search files in inline mode. Just press following buttons and start searching.__
+__ඔයාලට ඔනේ දෙවල් ලබාගන්න පහත ඉන්ලයින් බටන් එක යුස් කරන්න ❤️__
+__📌 යට තියෙන බටන් එක ටච් කරල ඔයාට ඕනෙ **ෆිල්ම් එකේ නම හරියම අවුරැද්දත් එක්ක** ගහන්න__
+**▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+       🔰🅸🅽🅵🅸🅽🅸🆃🆈 🅻🅺🔰
+    ɪɴғɪɴɪᴛʏ_ʙᴏᴛs | @BOTS_Infinity  
+          ᴏᴡɴᴇʀ 🔰 | 🔰 @Dx_Doc 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬**
 """
 
 SHARE_BUTTON_TEXT = """
-Leo Media Search Bot 🇱🇰
+Infinity Media Search Bot
 
 Here you can find any media file by searching its name 😊
 
 Bot : {username} 🤖
-Support Group : @leosupportx 🇱🇰
-Updates Channel: @new_ehi 🇱🇰
-Developper : @naviya2 🇱🇰
+Updates Channel: @BOTS_Infinity
 """
 
 START_MSG = environ.get('START_MSG', default_start_massege)
